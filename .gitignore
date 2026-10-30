@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Build / packaging
+build/
+dist/
+_installers/
+*.spec.local
+
+# Runtime data: databases, indexes, logs, exports, snapshots, backups
+*.db
+*.sqlite
+*.sqlite3
+*-wal
+*-shm
+data/
+runtime/
+logs/
+exports/
+snapshots/
+backups/
+cache/
+_tmp_fetch/
+docs_text/
+tmp_video/
+tmp_seed_test/
+pilot/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+config.toml
+*.key
+secrets/
+
+# Private source material and brand originals
+*.docx
+*.pdf
+*.mp4
+*.zip
+*.7z
+logo图.png
+assets/brand/logo.png
+assets/brand/*.jpg
+assets/brand/*.jpeg
+assets/brand/*.webp
+assets/brand/*.psd
+docs/private/
+
+# IDE / OS
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,27 @@
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(1, 0, 0, 0),
+    prodvers=(1, 0, 0, 0),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+  ),
+  kids=[
+    StringFileInfo([
+      StringTable('080404b0', [
+        StringStruct('CompanyName', '道源知识库'),
+        StringStruct('FileDescription', '道源知识库 普通用户端'),
+        StringStruct('FileVersion', '1.0.0'),
+        StringStruct('InternalName', 'DaoyuanReader'),
+        StringStruct('LegalCopyright', '仅供个人学习整理使用；文章版权归原权利人'),
+        StringStruct('OriginalFilename', '道源知识库.exe'),
+        StringStruct('ProductName', '道源知识库'),
+        StringStruct('ProductVersion', '1.0.0')
+      ])
+    ]),
+    VarFileInfo([VarStruct('Translation', [2052, 1200])])
+  ]
+)

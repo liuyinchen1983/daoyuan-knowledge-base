@@ -1,0 +1,40 @@
+# 道源知识库配置示例
+# 复制为 %USERPROFILE%\DaoYuanData\config.toml 后按需修改。
+# 本文件不包含 API Key；Key 请通过软件设置界面写入 Windows 安全存储。
+
+[app]
+name = "道源知识库"
+data_dir = "~/DaoYuanData"       # 运行数据目录，必须在 Git 仓库之外
+timezone = "Asia/Shanghai"
+log_level = "INFO"
+
+[collector]
+delay_min = 8.0                  # 每篇之间最少等待秒数，不得低于 3
+delay_max = 15.0                 # 每篇之间最多等待秒数
+batch_size = 20                  # 每连续抓取多少篇强制暂停
+batch_pause_min = 180.0          # 批次暂停最少秒数
+batch_pause_max = 300.0          # 批次暂停最多秒数
+max_fetch_per_run = 150          # 单次运行最多实际抓取篇数；0 表示不限
+timeout = 30.0
+max_retries = 2
+retry_backoff = 30.0
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+
+[schedule]
+enabled = false                  # 示例默认关闭；确认来源和频率后再启用
+interval_days = 1
+daily_time = "09:00"
+
+[ai]
+provider = "deepseek"
+base_url = "https://api.deepseek.com"
+model = "deepseek-flash"
+timeout = 60.0
+max_context_chars = 12000
+max_answer_tokens = 8192         # AI 回答的最大 token 数
+temperature = 0.2
+
+[ui]
+theme = "light"
+font_size = 18
+page_width = 820
